@@ -870,6 +870,32 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
       },
     ],
   },
+  cheap_ethereum: {
+    type: "CryptoCurrency",
+    id: "cheap_ethereum",
+    coinType: 60,
+    name: "Cheap Ethereum",
+    managerAppName: "Ethereum",
+    ticker: "cTH",
+    scheme: "cheapethereum",
+    color: "#0ebdcd",
+    symbol: "Ξ",
+    units: ethereumUnits("cTH", "cTH"),
+    family: "ethereum",
+    blockAvgTime: 15,
+    ethereumLikeInfo: {
+      chainId: 777,
+    },
+    explorerViews: [
+      {
+        // https://expedition.dev/?rpcUrl=https://node.cheapeth.org/rpc
+
+        // tx: "https://etherscan.io/tx/$hash", // TODO
+        address: "https://expedition.dev/address/$address?rpcUrl=https%3A%2F%2Fnode.cheapeth.org%2Frpc", // TODO
+        // token: "https://etherscan.io/token/$contractAddress?a=$address", // TODO
+      },
+    ],
+  },
   ethereum_classic: {
     type: "CryptoCurrency",
     id: "ethereum_classic",
