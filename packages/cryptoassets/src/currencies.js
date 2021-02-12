@@ -888,11 +888,15 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
     },
     explorerViews: [
       {
-        // https://expedition.dev/?rpcUrl=https://node.cheapeth.org/rpc
+        // TODO remove these and replace with below
+        tx: "https://etherscan.io/tx/$hash",
+        address: "https://etherscan.io/address/$address",
+        token: "https://etherscan.io/token/$contractAddress?a=$address",
 
-        // tx: "https://etherscan.io/tx/$hash", // TODO
-        address: "https://expedition.dev/address/$address?rpcUrl=https%3A%2F%2Fnode.cheapeth.org%2Frpc", // TODO
-        // token: "https://etherscan.io/token/$contractAddress?a=$address", // TODO
+        // TODO fix these links
+        // tx: "https://expedition.dev/tx/$hash?rpcUrl=https%3A%2F%2Fnode.cheapeth.org%2Frpc",
+        // address: "https://expedition.dev/address/$address?rpcUrl=https%3A%2F%2Fnode.cheapeth.org%2Frpc",
+        // token: "https://etherscan.io/token/$contractAddress?a=$address",
       },
     ],
   },
